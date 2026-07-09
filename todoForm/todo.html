@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student CRUD App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+      
+        <div class="to-do-container">
+
+            <h2>TO DO FORM</h2>
+
+            <form id="student-form">
+
+                <input type="text" id="name" placeholder="Enter Name" >
+
+                <input type="number" id="rollNo" placeholder="Enter Roll No" >
+
+                <input type="text" id="studentClass" placeholder="Enter Class" >
+
+                <input type="text" id="university" placeholder="Enter University" >
+
+                <input type="text" id="city" placeholder="Enter City" >
+
+                <input type="email" id="email" placeholder="Enter Email" >
+
+                <label for="startDate">Start Date</label>
+                <input type="date" id="startDate">
+
+                <label for="endDate">End Date</label>
+                <input type="date" id="endDate">
+
+                <button id="submit-btn" type="submit">Add</button>
+
+            </form>
+
+        </div>
+
+      
+        <div id="student-list"></div>
+
+    </div>
+
+    <div id="view-profile" class="modal">
+
+        <div class="profile-card">
+
+            <button class="close-btn" onclick="closeView()">✖</button>
+
+            <h2 id="view-name"></h2>
+
+            <p id="view-roll"></p>
+
+            <p id="view-class"></p>
+
+            <p id="view-university"></p>
+
+            <p id="view-city"></p>
+
+            <p id="view-email"></p>
+
+            <p id="view-start"></p>
+
+            <p id="view-end"></p>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
